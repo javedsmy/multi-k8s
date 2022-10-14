@@ -1,6 +1,6 @@
 docker build -t javshags/multi-client:latest -t javshags/multi-client:$SHA  -f ./client/Dockerfile ./client
 docker build -t javshags/multi-server:latest -t javshags/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -t javshags/multi-worker:latest -t javshags/multi-worker:$SHA -f ./worker/Dockefile ./worker
+docker build -t javshags/multi-worker:latest -t javshags/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push javshags/multi-client:latest
 docker push javshags/multi-client:$SHA
 docker push javshags/multi-server:latest
